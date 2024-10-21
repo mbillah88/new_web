@@ -1,0 +1,99 @@
+body{    
+    padding: 0;
+    margin: 0;
+    font-family: Adelle, Roboto Slab, DejaVu Serif, Georgia, Times New Roman, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #4e443c;
+    background: #f0efe7 url(http://git-scm.com//images/bg/body.jpg);
+}
+
+.inner {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    overflow: visible;
+}
+.inner:before {
+    display: table;
+    content: "";
+}
+.inner:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+header {
+    position: relative;
+    padding-bottom: 26px;
+    margin-top: 14px;
+}
+#content-wrapper {
+}
+.sidebar-btn {
+    display: none;
+}
+aside {
+    float: left;
+    width: 218px;
+    margin-bottom: 35px;
+}
+aside.sidebar {
+    font-size: 13px !important;
+    line-height: 16.5px;
+}
+#content {
+    float: right;
+    width: 702px;
+}
+#book-chapters {
+    position: relative;
+    background-color: #ebe9e1;
+    background-color: rgba(223, 221, 213, .33);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    padding: 8px 12px 6px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+#main {
+    padding: 22px;
+    margin-bottom: 35px;
+    background-color: #fcfcfa;
+    border: solid 1px #e2e0d8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+footer {
+    padding: 20px 0 40px;
+    margin-top: 35px;
+    clear: both;
+    font-size: 12px;
+    line-height: 15.4px;
+    color: #9a9994;
+    border-top: solid 1px #d8d7cf;
+}
+footer:before {
+    display: table;
+    content: "";
+}
+footer .site-source {
+    float: left;
+    padding-left: 46px;
+    background: url(http://git-scm.com//images/icons/code.png) 0 2px no-repeat;
+    background-size: 38px 23px;
+}
+footer .sfc-member {
+    float: right;
+    text-align: right;
+}
+footer:after {
+    display: table;
+    clear: both;
+    content: "";
+}
