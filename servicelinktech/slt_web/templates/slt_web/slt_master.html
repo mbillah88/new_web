@@ -1,0 +1,89 @@
+{% load static %}
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'slt_web/css/slt_css.css' %}">
+    <link rel="stylesheet" href="{% static 'slt_web/css/w3.css' %}">
+    <link rel="stylesheet" href="{% static 'slt_web/css/font-awesome.min.css' %}">
+</head>
+<body>
+    <div id="slt_header" class="slt_flex_header">
+        <div class="slt_flex_header_right">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+            <a href="/"><img class="w3-image" src="{% static 'slt_web/images/slt_bannar_1.png' %}" width="400" height="auto" alt="SLT" /></a>            
+        </div>
+        <div class="slt_flex_item_left">
+          <a class="active" href="#home">Home</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+    </div>
+    <div id="slt_container">        
+        
+        <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:200px;">
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+            Accordion <i class="fa fa-caret-down"></i>
+            </button>
+            <div id="demoAcc" class="w3-hide w3-white w3-card">
+            <a href="#" class="w3-bar-item w3-button">Link</a>
+            <a href="#" class="w3-bar-item w3-button">Link</a>
+            </div>
+        
+            <div class="w3-dropdown-click">
+            <button class="w3-button" onclick="myDropFunc()">
+                Dropdown <i class="fa fa-caret-down"></i>
+            </button>
+            <div id="demoDrop" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+            </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+        
+        <div class="w3-container" style="margin-left:200px">
+        <h2>Sidebar Accordion</h2>
+        <p>In this example, we have added an accordion and a dropdown menu inside the side navigation.</p>
+        <p>Click on both to understand how they differ from each other. The accordion will push down the content, while the dropdown lays over the content.</p>
+        </div>
+        
+        <script>
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-green";
+            } else { 
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className = 
+            x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+        
+        function myDropFunc() {
+            var x = document.getElementById("demoDrop");
+            if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-green";
+            } else { 
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className = 
+            x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+        </script>
+    </div>    
+    <div id="slt_footer" class="w3-footer">
+            
+    </div>
+
+</body>
+</html>

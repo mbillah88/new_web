@@ -1,0 +1,81 @@
+{% load static %}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'slt_web/css/slt_new.css' %}">
+    <script src="{% static 'slt_web/js/jquery.slim.min.js' %}"></script>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body style="background-color: darkgray;">
+    <div class="slt_wrapper">
+        <div class="slt_inner">
+            <div class="header_left">
+                <a class="navbar-brand" href="#">
+                 <img src="{% static 'slt_web/images/images.jpeg' %}" alt="SLT" style="width:40px;">
+               </a>
+                <h1>Service Link Tech BD</h1>
+            </div>
+            <div class="header_right">                
+                <p>Jahaj Company Mor, Rangpur</p>
+            </div>
+        </div>
+        <div class="">
+            
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
+  <br>
+  
+           
+        </div>
+        <div class="slt_inner">
+            <div class="slt_sidebar">
+                <div class="">
+                    <ul>
+                        <li>a</li>
+                        <li>a</li>
+                        <li>a</li>
+                        <li>a</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slt_main slt_content">
+                <div class="">
+                    main
+                </div>
+            </div>
+        </div>          
+        <footer>
+            <div class="footer_wrapper">
+                <div class="footer-left">
+                    <h2>Service Link Tech BD</h2>
+                    <p>@Copyright 2024</p>
+                </div> 
+                <div class="footer-right">Jahaj Company Mor, Rangpur</div> 
+            </div>      
+        </footer> 
+    </div>   
+</body>
+</html>
