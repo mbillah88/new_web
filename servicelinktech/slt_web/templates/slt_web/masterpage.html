@@ -1,0 +1,69 @@
+{% load static %}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'slt_web/css/slt_new.css' %}">
+    <script src="{% static 'slt_web/js/jquery.slim.min.js' %}"></script>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body class="">
+
+    <div class="page">
+        <div class="sidebar">
+            <div class="top-row ps-3 navbar navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="">servicelinktech</a>
+                </div>
+            </div>
+            
+            <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+            
+            <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+                <nav class="flex-column">
+                    <div class="nav-item px-3">
+                        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                            <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+                        </NavLink>
+                    </div>
+            
+                    <div class="nav-item px-3">
+                        <NavLink class="nav-link" href="counter">
+                            <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+                        </NavLink>
+                    </div>
+            
+                    <div class="nav-item px-3">
+                        <NavLink class="nav-link" href="weather">
+                            <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
+                        </NavLink>
+                    </div>
+                </nav>
+            </div>
+            
+            
+        </div>
+    
+        <main>
+            <div class="top-row px-4">
+                <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+            </div>
+    
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
+    </div>
+    
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    
+</body>

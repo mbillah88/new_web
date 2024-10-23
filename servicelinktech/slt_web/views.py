@@ -4,7 +4,7 @@ from django.template import loader
 # Create your views here.
 
 def master(request):
-    template = loader.get_template("slt_web/new.html")
+    template = loader.get_template("slt_web/masterpage.html")
     return HttpResponse(template.render())
 
 def index(request):
