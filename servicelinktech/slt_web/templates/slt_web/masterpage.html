@@ -17,10 +17,11 @@
 <body class="">
 
     <div class="page">
-        <div class="sidebar">
+        <div class="sidebar" style="color: whitesmoke;">
             <div class="top-row ps-3 navbar navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="">servicelinktech</a>
+                <div class="container-fluid">                    
+                    <a class="navbar-brand" href="#">
+                        <img src="{% static 'slt_web/images/slt_bannar.jpg' %}" alt="SLT" style="width:160px;"></a>
                 </div>
             </div>
             
@@ -52,12 +53,14 @@
         </div>
     
         <main>
-            <div class="top-row px-4">
+            <div class="top-row px-4 d-flex">
                 <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
             </div>
     
-            <article class="content px-4">
-                @Body
+            <article class="content px-4">                
+                {% block content %} 
+                
+                {% endblock %}
             </article>
         </main>
     </div>
