@@ -1,0 +1,28 @@
+
+  /* Style the header links */
+  
+.slt_flex_header {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .slt_flex_item_left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .slt_flex_item_right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .slt_flex_item_lef, .slt_flex_item_right {
+      flex: 100%;
+    }
+  }
