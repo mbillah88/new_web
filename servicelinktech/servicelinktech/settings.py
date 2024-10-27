@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': 'jankipur_shanto_web',
         'USER': 'jankipur_jankipur',
         'PASSWORD': 'Jankipur#001',
-        'HOST':'srv1.whitelabelhost.net',
+        'HOST':'shanto.jankipurhighschool.com',
         'PORT':'3306',
     }
 }
